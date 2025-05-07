@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
+import emailjs from 'emailjs-com';
+import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
 import PageTransition from '../components/PageTransition';
 import Section from '../components/Section';
 import TypewriterText from '../components/TypewriterText';
@@ -23,28 +24,40 @@ const Contact: React.FC = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    setSubmitStatus(null)
+
+    const serviceID = process.env.EMAILJS_SERVICE_ID || '';
+    const templateID = process.env.EMAILJS_TEMPLATE_ID || '';
+    const userID = process.env.EMAILJS_USER_ID || '';
+    try {
+       await emailjs.sendForm(serviceID, templateID, e.currentTarget as HTMLFormElement, userID);
+
       setSubmitStatus('success');
-      
-      // Clear form
       setFormState({
         name: '',
         email: '',
         subject: '',
         message: ''
       });
-      
-      // Reset status after 5 seconds
+    } catch (error) {
+        setSubmitStatus('error')
+        if (error instanceof Error) {
+            console.error('Error sending email:', error.message);
+          } else {
+            console.error('An unknown error occurred:', error);
+          }
+
+    } finally {
+        setIsSubmitting(false);
       setTimeout(() => {
         setSubmitStatus(null);
       }, 5000);
-    }, 1500);
+    }
+
+
   };
 
   return (
@@ -87,7 +100,7 @@ const Contact: React.FC = () => {
                       <div>
                         <h3 className="text-sm font-medium text-gray-500">Email</h3>
                         <a href="mailto:hello@example.com" className="font-medium text-gray-900 hover:text-indigo-600 transition-colors">
-                          hello@example.com
+                          ahamedamansoor.dev@gmail.com
                         </a>
                       </div>
                     </motion.div>
@@ -104,7 +117,7 @@ const Contact: React.FC = () => {
                       <div>
                         <h3 className="text-sm font-medium text-gray-500">Phone</h3>
                         <a href="tel:+11234567890" className="font-medium text-gray-900 hover:text-indigo-600 transition-colors">
-                          +1 (123) 456-7890
+                          +91-7010932552
                         </a>
                       </div>
                     </motion.div>
@@ -121,7 +134,7 @@ const Contact: React.FC = () => {
                       <div>
                         <h3 className="text-sm font-medium text-gray-500">Location</h3>
                         <p className="font-medium text-gray-900">
-                          San Francisco, CA
+                          Bengaluru, Karnataka, India
                         </p>
                       </div>
                     </motion.div>
@@ -131,22 +144,10 @@ const Contact: React.FC = () => {
                     <h3 className="text-lg font-bold mb-4 text-gray-900">Connect With Me</h3>
                     <div className="flex space-x-4">
                       <a 
-                        href="#" 
-                        className="bg-gray-200 p-3 rounded-full text-gray-700 hover:bg-indigo-600 hover:text-white transition-colors"
-                      >
-                        <Github size={20} />
-                      </a>
-                      <a 
-                        href="#" 
+                        href="https://www.linkedin.com/in/ahamedamansoor/" target="_blank"
                         className="bg-gray-200 p-3 rounded-full text-gray-700 hover:bg-indigo-600 hover:text-white transition-colors"
                       >
                         <Linkedin size={20} />
-                      </a>
-                      <a 
-                        href="#" 
-                        className="bg-gray-200 p-3 rounded-full text-gray-700 hover:bg-indigo-600 hover:text-white transition-colors"
-                      >
-                        <Twitter size={20} />
                       </a>
                     </div>
                   </div>
@@ -181,7 +182,7 @@ const Contact: React.FC = () => {
                             value={formState.name}
                             onChange={handleChange}
                             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
-                            placeholder="John Doe"
+                            placeholder="Ahamed Mansoor"
                             required
                           />
                         </div>
@@ -196,7 +197,7 @@ const Contact: React.FC = () => {
                             value={formState.email}
                             onChange={handleChange}
                             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
-                            placeholder="john@example.com"
+                            placeholder="abc@example.com"
                             required
                           />
                         </div>
@@ -258,54 +259,6 @@ const Contact: React.FC = () => {
             </div>
           </div>
         </Section>
-        
-        {/* FAQ Section */}
-        <Section className="bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Frequently Asked Questions</h2>
-            <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-              {[
-                {
-                  question: "What is your typical project timeline?",
-                  answer: "Project timelines vary depending on complexity, but a typical website takes 2-4 weeks from concept to completion."
-                },
-                {
-                  question: "Do you work with clients remotely?",
-                  answer: "Yes, I work with clients from around the world remotely. We can communicate via email, video calls, or your preferred method."
-                },
-                {
-                  question: "What is your payment structure?",
-                  answer: "I typically require a 50% deposit to begin work, with the remaining 50% due upon project completion."
-                },
-                {
-                  question: "Do you offer ongoing maintenance?",
-                  answer: "Yes, I offer website maintenance packages to keep your site secure, updated, and running smoothly."
-                },
-                {
-                  question: "Will my website be mobile-friendly?",
-                  answer: "Absolutely! All websites I build are fully responsive and optimized for all devices, from desktops to smartphones."
-                },
-                {
-                  question: "Can you help with existing websites?",
-                  answer: "Yes, I can help improve, update, or troubleshoot existing websites to enhance their performance and appearance."
-                }
-              ].map((faq, index) => (
-                <motion.div 
-                  key={index}
-                  className="bg-white p-6 rounded-xl shadow-sm"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                >
-                  <h3 className="text-lg font-bold mb-3 text-gray-900">{faq.question}</h3>
-                  <p className="text-gray-700">{faq.answer}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </Section>
-        
         {/* Call to Action */}
         <Section className="bg-indigo-600 text-white">
           <div className="container mx-auto px-4 text-center">

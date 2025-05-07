@@ -18,7 +18,7 @@ const Home: React.FC = () => {
       <div className="relative min-h-screen">
         {/* Hero section with floating particles */}
         <div className="relative h-screen flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 z-0" style={{ height: '100%' }}>
             <ParticlesBackground />
           </div>
           <div className="container mx-auto px-4 z-10 text-center">
@@ -28,7 +28,7 @@ const Home: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Hi, I'm <span className="text-indigo-600">Mansoor</span>
+              Hi, I'm <span className="text-indigo-600">Ahamed Mansoor A</span>
             </motion.h1>
             <motion.div
               className="text-xl md:text-3xl text-gray-700 mb-8"

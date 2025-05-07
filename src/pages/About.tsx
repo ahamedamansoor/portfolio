@@ -50,7 +50,7 @@ const About: React.FC = () => {
                   <h2 className="text-2xl font-bold mb-4 text-gray-900">My Story</h2>
                   <div className="space-y-6 text-gray-700">
                     <p>
-                      Hello! I'm Alex, a passionate frontend developer with over 5 years of experience crafting engaging digital experiences.
+                      Hello! I'm Ahamed Mansoor, a passionate frontend developer with over 5 years of experience crafting engaging digital experiences.
                       I specialize in building intuitive, responsive websites and applications that not only look great but also deliver exceptional user experiences.
                     </p>
                     <p>
@@ -85,21 +85,21 @@ const About: React.FC = () => {
                   <div className="space-y-8">
                     {[
                       {
-                        title: "Senior Frontend Developer",
-                        company: "Tech Innovations Inc.",
-                        period: "2020 - Present",
-                        description: "Lead frontend development for client projects, implementing modern web technologies and best practices."
+                        title: "Software engineer(G8)",
+                        company: "Cisco Systems",
+                        period: "2023 - Present",
+                        description: "Leading frontend features development for CNC - Crosswork product"
                       },
                       {
-                        title: "Web Developer",
-                        company: "Digital Agency Co.",
-                        period: "2018 - 2020",
-                        description: "Developed responsive websites and web applications for various clients in e-commerce and SaaS industries."
+                        title: "Software engineer (G6)",
+                        company: "Cisco Systems",
+                        period: "2021 - 2023",
+                        description: "Developed responsive web applications for CNC - Crosswork product"
                       },
                       {
-                        title: "Junior Developer",
-                        company: "Startup Studio",
-                        period: "2016 - 2018",
+                        title: "Software developer",
+                        company: "Infrrd.ai",
+                        period: "2020 - 2021",
                         description: "Contributed to frontend development for early-stage startups, focusing on user interface implementation."
                       }
                     ].map((item, index) => (
@@ -130,21 +130,14 @@ const About: React.FC = () => {
                   <div className="space-y-8">
                     {[
                       {
-                        degree: "Master's in Computer Science",
-                        school: "Tech University",
-                        period: "2015 - 2017",
-                        description: "Specialized in Human-Computer Interaction and Web Technologies."
+                        degree: "Bachelor's in Electrical and Electronics Engineering",
+                        school: "M.Kumarasamy college of Engineering",
+                        period: "2013 - 2017",
                       },
                       {
-                        degree: "Bachelor's in Information Technology",
-                        school: "State University",
-                        period: "2011 - 2015",
-                        description: "Graduated with honors. Focused on web development and design principles."
-                      },
-                      {
-                        degree: "Web Development Bootcamp",
-                        school: "Code Academy",
-                        period: "Summer 2014",
+                        degree: "Web Development Certification",
+                        school: "Abc institute",
+                        period: "2020",
                         description: "Intensive program covering frontend and backend development technologies."
                       }
                     ].map((item, index) => (
@@ -178,9 +171,9 @@ const About: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                 {[
                   { icon: <Coffee size={32} />, number: "1,200+", label: "Cups of Coffee" },
-                  { icon: <Award size={32} />, number: "15+", label: "Projects Completed" },
+                  { icon: <Award size={32} />, number: "50+", label: "Features developed" },
                   { icon: <Briefcase size={32} />, number: "5+", label: "Years Experience" },
-                  { icon: <GraduationCap size={32} />, number: "3", label: "Degrees & Certificates" }
+                  { icon: <Award size={32} />, number: "19+", label: "Awards and Recoginitions" },
                 ].map((item, index) => (
                   <motion.div 
                     key={index}

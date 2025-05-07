@@ -11,20 +11,20 @@ const Skills: React.FC = () => {
     { name: "CSS3/SASS", level: 90 },
     { name: "JavaScript (ES6+)", level: 92 },
     { name: "TypeScript", level: 85 },
+    { name: "Angular (19)", level: 90 },
     { name: "React", level: 90 },
-    { name: "Next.js", level: 80 },
-    { name: "Tailwind CSS", level: 88 },
+    { name: "Rxjs", level: 85 },
     { name: "Node.js", level: 75 },
     { name: "Git/GitHub", level: 85 },
-    { name: "UI/UX Design", level: 78 }
+    { name: "Jasmine", level: 95 },
+    { name: "Playwright", level: 80 },
+    { name: "Golang", level: 75 },
   ];
 
   // Design tools
   const designTools = [
     { name: "Figma", level: 90 },
-    { name: "Adobe XD", level: 85 },
     { name: "Photoshop", level: 70 },
-    { name: "Illustrator", level: 65 }
   ];
 
   // Soft skills

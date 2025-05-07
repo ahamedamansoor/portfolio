@@ -8,28 +8,36 @@ import TypewriterText from '../components/TypewriterText';
 const Recognitions: React.FC = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "Senior Product Manager at TechCorp",
-      company: "TechCorp",
-      image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg",
-      text: "One of the most talented developers I've worked with. Their ability to translate complex requirements into elegant solutions is remarkable.",
-      highlight: "Leadership & Technical Excellence"
-    },
-    {
-      name: "Michael Chen",
-      role: "Engineering Director",
-      company: "InnovateHub",
+      name: "Mirel Sprung",
+      role: "Director, Software Engineering",
+      company: "Cisco Systems",
       image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
-      text: "A true problem-solver who consistently delivers high-quality work. Their commitment to best practices and clean code has significantly improved our development processes.",
-      highlight: "Code Quality & Innovation"
+      text: "Thanks for getting this done Mansoor!! Without your diligence, hard work, and excellent collaboration, we would not have been able to deliver such a rich accessibility and localization functionality. I appreciate all the time you’ve taken, on top of your committed CNC activities, to deliver this new functionality in tight schedule to ensure the success of the EPNM program. Keep it up! Thanks, Mirel.",
+      highlight: "Successful Infra UI EPNM milestones delivery!"
     },
     {
-      name: "Emily Rodriguez",
-      role: "UX Design Lead",
-      company: "DesignFlow",
-      image: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg",
-      text: "Exceptional at bridging the gap between design and development. Their attention to detail in implementing UI components is outstanding.",
-      highlight: "Design Implementation"
+      name: "Leena Gupta",
+      role: "Leader, Software Engineering",
+      company: "Cisco Systems",
+      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
+      text: "Mansoor, your positive attitude and willingness to take on any UI challenge has greatly helped us meet our deliverables for Hi-UI on time! No matter how many last minute design changes were proposed, you took them in stride and were able to quickly incorporate them into the UI, while also helping out with the localization changes in parallel! Numerous late nights and cross team collaborations were involved and without your diligence and hard work we would not have been able to meet the DTHO timelines. Truly appreciate your hard work and thank you for your dedication!",
+      highlight: "Positive Attitude and getting things done!"
+    },
+    {
+      name: "Sunil Kumar Matham",
+      role: "Principal Engineer",
+      company: "Cisco Systems",
+      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
+      text: "Mansoor played a crucial role in developing, thinking through various scenarios, and coordinating between development, U/X, and test teams for CAHI auto-remediation feature. The use case was complex that required iterating many times and changing the design. Mansoor worked through these many iterations bringing up corner cases and discussing with the team and addressing them accordingly. Mansoor has shown Cisco's values in doing the right thing for our customers.Exceptional at bridging the gap between design and development. Their attention to detail in implementing UI components is outstanding.",
+      highlight: "working through complexity of CAHI Remediation fea"
+    },
+    {
+      name: "Sunil Kumar Matham",
+      role: "Principal Engineer",
+      company: "Cisco Systems",
+      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
+      text: "Mansoor played a crucial role in developing, thinking through various scenarios, and coordinating between development, U/X, and test teams for CAHI auto-remediation feature. The use case was complex that required iterating many times and changing the design. Mansoor worked through these many iterations bringing up corner cases and discussing with the team and addressing them accordingly. Mansoor has shown Cisco's values in doing the right thing for our customers.Exceptional at bridging the gap between design and development. Their attention to detail in implementing UI components is outstanding.",
+      highlight: "working through complexity of CAHI Remediation fea"
     }
   ];
 

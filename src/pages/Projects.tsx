@@ -9,64 +9,34 @@ import TypewriterText from '../components/TypewriterText';
 const projects = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    category: "Web Development",
-    image: "bg-blue-200",
-    description: "A full-featured e-commerce solution with product management, cart functionality, and secure checkout.",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    link: "#",
-    github: "#"
-  },
-  {
-    id: 2,
     title: "Portfolio Template",
     category: "Web Design",
     image: "bg-purple-200",
     description: "A responsive portfolio template for creative professionals with smooth animations and modern design.",
-    technologies: ["HTML/CSS", "JavaScript", "GSAP"],
-    link: "#",
-    github: "#"
+    technologies: ["React", "Tailwind CSS", "EmailJS"],
+    link: "https://portfolio-mansoor.web.app/",
+    github: "https://github.com/ahamedamansoor/portfolio"
   },
   {
-    id: 3,
+    id: 2,
     title: "Task Management App",
     category: "Web Application",
     image: "bg-green-200",
     description: "A productivity app for managing tasks, projects, and team collaboration with real-time updates.",
     technologies: ["React", "Firebase", "Tailwind CSS"],
-    link: "#",
-    github: "#"
+    link: "https://schedule-my-task-901da.web.app/",
+    github: "https://github.com/ahamedamansoor/task-scheduler"
   },
   {
-    id: 4,
+    id: 3,
     title: "Weather Dashboard",
     category: "Web Application",
     image: "bg-yellow-200",
     description: "A weather application showing current conditions and forecasts with beautiful visualizations.",
-    technologies: ["React", "OpenWeather API", "Chart.js"],
-    link: "#",
-    github: "#"
+    technologies: ["React", "OpenWeather API", "D3.js"],
+    link: "https://web-climate-check.web.app/",
+    github: "https://github.com/ahamedamansoor/weather-check"
   },
-  {
-    id: 5,
-    title: "Restaurant Website",
-    category: "Web Design",
-    image: "bg-red-200",
-    description: "A visually appealing restaurant website with online menu, reservation system, and location information.",
-    technologies: ["HTML/CSS", "JavaScript", "PHP"],
-    link: "#",
-    github: "#"
-  },
-  {
-    id: 6,
-    title: "Social Media Dashboard",
-    category: "Web Application",
-    image: "bg-teal-200",
-    description: "An analytics dashboard for monitoring social media performance across multiple platforms.",
-    technologies: ["React", "Node.js", "D3.js"],
-    link: "#",
-    github: "#"
-  }
 ];
 
 const categories = [

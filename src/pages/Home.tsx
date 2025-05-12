@@ -28,7 +28,7 @@ const Home: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Hi, I'm <span className="text-indigo-600">Ahamed Mansoor A</span>
+              Hi, I'm <span className="text-indigo-600">Ahamed Mansoor </span>
             </motion.h1>
             <motion.div
               className="text-xl md:text-3xl text-gray-700 mb-8"
@@ -139,7 +139,7 @@ const Home: React.FC = () => {
             <div className="container mx-auto px-4">
               <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Skills & Expertise</h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                {['JavaScript', 'React', 'TypeScript', 'HTML/CSS', 'UI/UX Design', 'Node.js', 'Tailwind CSS', 'Responsive Design'].map((skill) => (
+                {['HTML','CSS/SCSS','JavaScript','TypeScript' , 'Angular17+' ,  'React', 'UI/UX Design','Node.js', 'Ag-grid','Mermaid', 'D3' , 'Responsive Design'].map((skill) => (
                   <motion.div 
                     key={skill}
                     className="bg-gray-50 rounded-lg p-4 text-center"

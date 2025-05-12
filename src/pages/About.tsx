@@ -1,3 +1,4 @@
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:2454924700.
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Briefcase, GraduationCap, Award, Coffee } from 'lucide-react';
@@ -33,15 +34,15 @@ const About: React.FC = () => {
                   <div className="space-y-4">
                     <div>
                       <h3 className="text-sm font-medium text-gray-500">Name</h3>
-                      <p className="font-medium">Alex Johnson</p>
+                      <p className="font-medium">Ahamed Mansoor A</p>
                     </div>
                     <div>
                       <h3 className="text-sm font-medium text-gray-500">Email</h3>
-                      <p className="font-medium">hello@example.com</p>
+                      <p className="font-medium">ahamedamansoor.dev@gmail.com</p>
                     </div>
                     <div>
                       <h3 className="text-sm font-medium text-gray-500">Location</h3>
-                      <p className="font-medium">San Francisco, CA</p>
+                      <p className="font-medium">Bengaluru, Karnataka, India</p>
                     </div>
                   </div>
                 </div>
@@ -50,15 +51,15 @@ const About: React.FC = () => {
                   <h2 className="text-2xl font-bold mb-4 text-gray-900">My Story</h2>
                   <div className="space-y-6 text-gray-700">
                     <p>
-                      Hello! I'm Ahamed Mansoor, a passionate frontend developer with over 5 years of experience crafting engaging digital experiences.
-                      I specialize in building intuitive, responsive websites and applications that not only look great but also deliver exceptional user experiences.
+                      Hello, I'm Ahamed Mansoor! I'm a frontend developer with a passion for crafting compelling digital experiences. With over 5 years of experience, I specialize in creating intuitive and responsive websites and applications that prioritize exceptional user experiences.
                     </p>
                     <p>
-                      My journey into the world of web development began during my college years, where I discovered my passion for combining creative design with technical problem-solving.
-                      Over the years, I've had the privilege of working with startups, agencies, and established companies, helping them bring their digital visions to life.
+                    My journey into web development took an exciting turn after working as an Electrical Engineer for 2.5 years. This shift allowed me to blend my technical background with a newfound love for coding and creating visually engaging interfaces. Discovering the joy of learning new technologies and building digital products truly invigorates me.
+                    Throughout my career, I've had the opportunity to collaborate with a diverse range of companies, from startups to established enterprises, bringing their unique digital visions to fruition.
                     </p>
+                    
                     <p>
-                      When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or hiking in the beautiful outdoors.
+                      When I'm not coding, you can find me exploring new techonology trends, play games, or hiking in the beautiful outdoors.
                       I believe in continuous learning and am always excited to tackle new challenges in the ever-evolving world of web development.
                     </p>
                   </div>
@@ -85,19 +86,19 @@ const About: React.FC = () => {
                   <div className="space-y-8">
                     {[
                       {
-                        title: "Software engineer(G8)",
+                        title: "Software Engineer(G8)",
                         company: "Cisco Systems",
                         period: "2023 - Present",
                         description: "Leading frontend features development for CNC - Crosswork product"
                       },
                       {
-                        title: "Software engineer (G6)",
+                        title: "Software Engineer (G6)",
                         company: "Cisco Systems",
                         period: "2021 - 2023",
                         description: "Developed responsive web applications for CNC - Crosswork product"
                       },
                       {
-                        title: "Software developer",
+                        title: "Software Developer",
                         company: "Infrrd.ai",
                         period: "2020 - 2021",
                         description: "Contributed to frontend development for early-stage startups, focusing on user interface implementation."
@@ -135,7 +136,7 @@ const About: React.FC = () => {
                         period: "2013 - 2017",
                       },
                       {
-                        degree: "Web Development Certification",
+                        degree: "Full stack developer Certification",
                         school: "Abc institute",
                         period: "2020",
                         description: "Intensive program covering frontend and backend development technologies."

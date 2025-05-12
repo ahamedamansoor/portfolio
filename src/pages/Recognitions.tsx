@@ -20,46 +20,56 @@ const Recognitions: React.FC = () => {
       role: "Leader, Software Engineering",
       company: "Cisco Systems",
       image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
-      text: "Mansoor, your positive attitude and willingness to take on any UI challenge has greatly helped us meet our deliverables for Hi-UI on time! No matter how many last minute design changes were proposed, you took them in stride and were able to quickly incorporate them into the UI, while also helping out with the localization changes in parallel! Numerous late nights and cross team collaborations were involved and without your diligence and hard work we would not have been able to meet the DTHO timelines. Truly appreciate your hard work and thank you for your dedication!",
+      text: "Thanks for Ahamed Mansoor proactively and consistently deliver hight quality of work for Angular14 upgrade and other tasks. He always contributes with CAN DO sprite and work with passionate around clock. He is a valuable team player.",
       highlight: "Positive Attitude and getting things done!"
     },
     {
-      name: "Sunil Kumar Matham",
-      role: "Principal Engineer",
+      name: "Henry Zhen",
+      role: "Leader, Software Engineering",
       company: "Cisco Systems",
       image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
-      text: "Mansoor played a crucial role in developing, thinking through various scenarios, and coordinating between development, U/X, and test teams for CAHI auto-remediation feature. The use case was complex that required iterating many times and changing the design. Mansoor worked through these many iterations bringing up corner cases and discussing with the team and addressing them accordingly. Mansoor has shown Cisco's values in doing the right thing for our customers.Exceptional at bridging the gap between design and development. Their attention to detail in implementing UI components is outstanding.",
-      highlight: "working through complexity of CAHI Remediation fea"
+      text: "Mansoor, your positive attitude and willingness to take on any UI challenge has greatly helped us meet our deliverables for Hi-UI on time! No matter how many last minute design changes were proposed, you took them in stride and were able to quickly incorporate them into the UI, while also helping out with the localization changes in parallel! Numerous late nights and cross team collaborations were involved and without your diligence and hard work we would not have been able to meet the DTHO timelines. Truly appreciate your hard work and thank you for your dedication!",
+      highlight: "High quality and consistent delivery on time"
     },
     {
       name: "Sunil Kumar Matham",
       role: "Principal Engineer",
       company: "Cisco Systems",
       image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
-      text: "Mansoor played a crucial role in developing, thinking through various scenarios, and coordinating between development, U/X, and test teams for CAHI auto-remediation feature. The use case was complex that required iterating many times and changing the design. Mansoor worked through these many iterations bringing up corner cases and discussing with the team and addressing them accordingly. Mansoor has shown Cisco's values in doing the right thing for our customers.Exceptional at bridging the gap between design and development. Their attention to detail in implementing UI components is outstanding.",
-      highlight: "working through complexity of CAHI Remediation fea"
+      text: "Mansoor played a crucial role in developing, thinking through various scenarios, and coordinating between development, U/X, and test teams for CAHI auto-remediation feature. The use case was complex that required iterating many times and changing the design. Mansoor worked through these many iterations bringing up corner cases and discussing with the team and addressing them accordingly. Mansoor has shown Cisco's values in doing the right thing for our customers.",
+      highlight: "working through complexity of CAHI Remediation feature"
+    },
+    {
+      name: "Fei Yang",
+      role: "Product Designer",
+      company: "Cisco Systems",
+      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
+      text: "We want to express our sincere appreciation for your invaluable contributions to aligning the UI with the Magnetic design system. Your efforts in addressing the pending common components bugs were crucial in making the project successful. Thanks to your problem-solving skills, we were able to stay on track with the Magnetic design system, resulting in a more seamless and successful outcome. Your work has made a significant impact, and we are truly grateful for your contributions.",
+      highlight: "Thanks for your excellent efforts!"
+    },
+    {
+      name: "Priyanka Kumari",
+      role: "Software Engineer",
+      company: "Cisco Systems",
+      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
+      text: "Hi Mansoor, I wanted to take a moment to express my sincere appreciation for your exceptional contributions and your outstanding collaboration as a member of infra team.Your ability to foster a collaborative environment has been inspiring to all of us. Thank you so much.",
+      highlight: "Exemplary Catalyst for a Collaborative Atmosphere"
     }
   ];
 
   const achievements = [
     {
-      title: "Employee of the Year",
-      company: "TechCorp",
-      year: "2023",
-      description: "Recognized for outstanding contributions to major project deliveries and team leadership."
-    },
-    {
-      title: "Innovation Award",
-      company: "InnovateHub",
-      year: "2022",
-      description: "Awarded for developing a revolutionary feature that increased user engagement by 150%."
-    },
-    {
-      title: "Best Team Player",
-      company: "DesignFlow",
+      title: "Best Employee - CNC-UI ",
+      company: "Cisco Systems",
       year: "2021",
-      description: "Voted by peers for exceptional collaboration and support across multiple teams."
-    }
+      description: "Recognized as best employee in CNC infra-ui and got $10000 as reward"
+    },
+    {
+      title: "Grade-8 Promotion",
+      company: "Cisco Systems",
+      year: "2022",
+      description: "Got promoted as senior software engineer"
+    },
   ];
 
   return (
@@ -148,7 +158,7 @@ const Recognitions: React.FC = () => {
 
         {/* Skills Endorsements */}
         <Section className="bg-gray-50">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4" style={{display: 'none'}}>
             <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Skill Endorsements</h2>
             <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6">
               {[

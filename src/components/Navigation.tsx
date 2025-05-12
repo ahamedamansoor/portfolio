@@ -16,7 +16,7 @@ const Navigation: React.FC<NavigationProps> = ({
   const links = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
-    { path: '/projects', label: 'Projects' },
+    // { path: '/projects', label: 'Projects' },
     { path: '/skills', label: 'Skills' },
     { path: '/recognitions', label: 'Recognitions' },
     { path: '/contact', label: 'Contact' }

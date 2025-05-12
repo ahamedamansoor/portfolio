@@ -13,6 +13,22 @@ const Home: React.FC = () => {
     aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const downloadCv = () => {
+    // Create a temporary link element
+    const link = document.createElement('a');
+    link.href = '/Ahamed Mansoor Cv';
+    link.download = 'Ahamed Mansoor CV';
+
+    // Append the link to the document
+    document.body.appendChild(link);
+
+    // Trigger the download
+    link.click();
+
+    // Remove the link from the document
+    document.body.removeChild(link);
+  };
+
   return (
     <PageTransition>
       <div className="relative min-h-screen">
@@ -51,10 +67,16 @@ const Home: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               <button 
-                className="px-8 py-3 bg-indigo-600 text-white rounded-full font-medium shadow-lg hover:bg-indigo-700 transition duration-300"
+                className="px-8 py-3 bg-indigo-600 text-white rounded-full font-medium shadow-lg hover:bg-indigo-700 transition duration-300 mr-4"
                 onClick={scrollToAbout}
               >
                 View My Work
+              </button>
+              <button
+                className="px-8 py-3 bg-white text-indigo-600 rounded-full font-medium shadow-lg hover:bg-gray-100 transition duration-300"
+                onClick={downloadCv}
+              >
+                Download CV
               </button>
             </motion.div>
           </div>

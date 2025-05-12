@@ -11,17 +11,17 @@ const projects = [
     id: 1,
     title: "Portfolio Template",
     category: "Web Design",
-    image: "bg-purple-200",
+    image: "https://img.freepik.com/premium-photo/top-view-work-desk-with-coffee-drawing-pad_23-2148397875.jpg?w=360",
     description: "A responsive portfolio template for creative professionals with smooth animations and modern design.",
     technologies: ["React", "Tailwind CSS", "EmailJS"],
     link: "https://portfolio-mansoor.web.app/",
-    github: "https://github.com/ahamedamansoor/portfolio"
+    github: ""
   },
   {
     id: 2,
     title: "Task Management App",
     category: "Web Application",
-    image: "bg-green-200",
+    image: "https://media.istockphoto.com/id/1492645918/photo/survey-form-concept-businessman-using-laptops-do-online-checklist-surveys-questionnaire-with.jpg?s=612x612&w=0&k=20&c=lqbzWDBLxqRe99kOz2GwfWDRzkVduf2BvUzn1NBGh7Q=",
     description: "A productivity app for managing tasks, projects, and team collaboration with real-time updates.",
     technologies: ["React", "Firebase", "Tailwind CSS"],
     link: "https://schedule-my-task-901da.web.app/",
@@ -31,7 +31,7 @@ const projects = [
     id: 3,
     title: "Weather Dashboard",
     category: "Web Application",
-    image: "bg-yellow-200",
+    image: "https://img.freepik.com/free-vector/realistic-weather-widget_1284-4092.jpg?semt=ais_hybrid&w=740",
     description: "A weather application showing current conditions and forecasts with beautiful visualizations.",
     technologies: ["React", "OpenWeather API", "D3.js"],
     link: "https://web-climate-check.web.app/",
@@ -102,7 +102,7 @@ const Projects: React.FC = () => {
                     onClick={() => setSelectedProject(project.id)}
                   >
                     <div className={`aspect-video ${project.image} flex items-center justify-center`}>
-                      <span className="font-bold text-xl text-gray-800">Project Image</span>
+                      <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
                     </div>
                     <div className="p-6">
                       <div className="flex justify-between items-start mb-4">
@@ -130,11 +130,12 @@ const Projects: React.FC = () => {
                         <button className="text-indigo-600 font-medium hover:text-indigo-700 transition-colors">
                           View Details
                         </button>
-                        <div className="flex space-x-2">
-                          <a href={project.github} className="text-gray-700 hover:text-indigo-600 transition-colors">
+                        <div className="flex space-x-2 z-index-2">
+                          { project?.github && <a href={project.github} target="_blank" className="text-gray-700 hover:text-indigo-600 transition-colors">
                             <Github size={20} />
                           </a>
-                          <a href={project.link} className="text-gray-700 hover:text-indigo-600 transition-colors">
+                          }
+                          <a href={project.link} target="_blank" className="text-gray-700 hover:text-indigo-600 transition-colors">
                             <ExternalLink size={20} />
                           </a>
                         </div>
@@ -170,7 +171,7 @@ const Projects: React.FC = () => {
                       return (
                         <>
                           <div className={`aspect-video ${project.image} flex items-center justify-center`}>
-                            <span className="font-bold text-xl text-gray-800">Project Image</span>
+                          <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
                           </div>
                           <div className="p-8">
                             <div className="flex flex-wrap justify-between items-start mb-6">
@@ -181,10 +182,7 @@ const Projects: React.FC = () => {
                             </div>
                             <p className="text-gray-700 mb-6 leading-relaxed">
                               {project.description}
-                              {/* Additional detailed description */}
-                              <br /><br />
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          
                             </p>
                             <div className="mb-6">
                               <h4 className="text-lg font-bold mb-2 text-gray-900">Technologies Used</h4>
@@ -207,14 +205,15 @@ const Projects: React.FC = () => {
                                 Close
                               </button>
                               <div className="flex space-x-3">
-                                <a 
+                                {project?.github && <a target="_blank"
                                   href={project.github}
                                   className="px-6 py-2 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors flex items-center"
                                 >
                                   <Github size={18} className="mr-2" /> GitHub
                                 </a>
+                                }
                                 <a 
-                                  href={project.link}
+                                  href={project.link} target="_blank"
                                   className="px-6 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition-colors flex items-center"
                                 >
                                   <ExternalLink size={18} className="mr-2" /> Visit Site

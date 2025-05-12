@@ -11,7 +11,7 @@ const Recognitions: React.FC = () => {
       name: "Mirel Sprung",
       role: "Director, Software Engineering",
       company: "Cisco Systems",
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
+      image: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
       text: "Thanks for getting this done Mansoor!! Without your diligence, hard work, and excellent collaboration, we would not have been able to deliver such a rich accessibility and localization functionality. I appreciate all the time you’ve taken, on top of your committed CNC activities, to deliver this new functionality in tight schedule to ensure the success of the EPNM program. Keep it up! Thanks, Mirel.",
       highlight: "Successful Infra UI EPNM milestones delivery!"
     },
@@ -19,7 +19,7 @@ const Recognitions: React.FC = () => {
       name: "Leena Gupta",
       role: "Leader, Software Engineering",
       company: "Cisco Systems",
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
+      image: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
       text: "Thanks for Ahamed Mansoor proactively and consistently deliver hight quality of work for Angular14 upgrade and other tasks. He always contributes with CAN DO sprite and work with passionate around clock. He is a valuable team player.",
       highlight: "Positive Attitude and getting things done!"
     },
@@ -27,7 +27,7 @@ const Recognitions: React.FC = () => {
       name: "Henry Zhen",
       role: "Leader, Software Engineering",
       company: "Cisco Systems",
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
+      image: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
       text: "Mansoor, your positive attitude and willingness to take on any UI challenge has greatly helped us meet our deliverables for Hi-UI on time! No matter how many last minute design changes were proposed, you took them in stride and were able to quickly incorporate them into the UI, while also helping out with the localization changes in parallel! Numerous late nights and cross team collaborations were involved and without your diligence and hard work we would not have been able to meet the DTHO timelines. Truly appreciate your hard work and thank you for your dedication!",
       highlight: "High quality and consistent delivery on time"
     },
@@ -35,7 +35,7 @@ const Recognitions: React.FC = () => {
       name: "Sunil Kumar Matham",
       role: "Principal Engineer",
       company: "Cisco Systems",
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
+      image: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
       text: "Mansoor played a crucial role in developing, thinking through various scenarios, and coordinating between development, U/X, and test teams for CAHI auto-remediation feature. The use case was complex that required iterating many times and changing the design. Mansoor worked through these many iterations bringing up corner cases and discussing with the team and addressing them accordingly. Mansoor has shown Cisco's values in doing the right thing for our customers.",
       highlight: "working through complexity of CAHI Remediation feature"
     },
@@ -43,7 +43,7 @@ const Recognitions: React.FC = () => {
       name: "Fei Yang",
       role: "Product Designer",
       company: "Cisco Systems",
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
+      image: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
       text: "We want to express our sincere appreciation for your invaluable contributions to aligning the UI with the Magnetic design system. Your efforts in addressing the pending common components bugs were crucial in making the project successful. Thanks to your problem-solving skills, we were able to stay on track with the Magnetic design system, resulting in a more seamless and successful outcome. Your work has made a significant impact, and we are truly grateful for your contributions.",
       highlight: "Thanks for your excellent efforts!"
     },
@@ -51,7 +51,7 @@ const Recognitions: React.FC = () => {
       name: "Priyanka Kumari",
       role: "Software Engineer",
       company: "Cisco Systems",
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
+      image: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
       text: "Hi Mansoor, I wanted to take a moment to express my sincere appreciation for your exceptional contributions and your outstanding collaboration as a member of infra team.Your ability to foster a collaborative environment has been inspiring to all of us. Thank you so much.",
       highlight: "Exemplary Catalyst for a Collaborative Atmosphere"
     }
@@ -59,10 +59,10 @@ const Recognitions: React.FC = () => {
 
   const achievements = [
     {
-      title: "Best Employee - CNC-UI ",
+      title: "Great Impact - Infra-UI",
       company: "Cisco Systems",
-      year: "2021",
-      description: "Recognized as best employee in CNC infra-ui and got $10000 as reward"
+      year: "2021 & 2022",
+      description: "Honoured for great impact in CNC infra-ui and got $20000 as reward"
     },
     {
       title: "Grade-8 Promotion",

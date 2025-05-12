@@ -29,9 +29,9 @@ const Contact: React.FC = () => {
     setIsSubmitting(true);
     setSubmitStatus(null)
 
-    const serviceID = process.env.EMAILJS_SERVICE_ID || '';
-    const templateID = process.env.EMAILJS_TEMPLATE_ID || '';
-    const userID = process.env.EMAILJS_USER_ID || '';
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID =  import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const userID =  import.meta.env.VITE_EMAILJS_USER_ID;
     try {
        await emailjs.sendForm(serviceID, templateID, e.currentTarget as HTMLFormElement, userID);
 

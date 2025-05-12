@@ -19,17 +19,21 @@ const About: React.FC = () => {
                   <TypewriterText 
                     texts={[
                       "Developer. Designer. Problem Solver.", 
-                      "Creating digital experiences since 2015.",
+                      "Creating digital experiences since 2020.",
                       "Turning ideas into reality."
                     ]} 
                   />
                 </div>
-              </div>
+              </div> 
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
                 <div className="col-span-1 md:col-span-1">
                   <div className="aspect-square bg-gray-200 rounded-xl overflow-hidden mb-6">
-                    {/* Profile Image Placeholder */}
+                    <img 
+                      src="/src/assets/about_image.jpeg" 
+                      alt="Ahamed Mansoor A profile"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="space-y-4">
                     <div>

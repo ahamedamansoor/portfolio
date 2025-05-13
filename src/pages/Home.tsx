@@ -16,7 +16,7 @@ const Home: React.FC = () => {
   const downloadCv = () => {
     // Create a temporary link element
     const link = document.createElement('a');
-    link.href = '/Ahamed Mansoor Cv';
+    link.href = '/Ahamed Mansoor Cv.pdf';
     link.download = 'Ahamed Mansoor CV';
 
     // Append the link to the document
